@@ -492,6 +492,8 @@ switch (day) {
 //*************** 
 // 028 Conditional Ternery Operator
 //***************
+
+/*
 const age = 19;
 
 // age >= 18 ? console.log(`I like to drink wine`) : console.log(`I like to drink water`);
@@ -514,3 +516,31 @@ console.log(`I like to drink ${age >= 18 ? 'wine' : 'water'}`);
 
 
 // used for smaller logics quick decisions.
+*/
+
+
+//*************** 
+// 029 Coding Challenge #2
+//***************
+/*
+let bill = 430;
+let tip;
+
+using if else statement
+if (bill <= 300 && bill >= 50) {
+  tip = 0.15 * bill;
+  console.log(`The bill was ${bill},the tip was ${tip}, and the total value ${bill + tip}`);
+} else if (bill > 300) {
+  tip = 0.2 * bill;
+  console.log(`The bill was ${bill},the tip was ${tip}, and the total value ${bill + tip}`);
+}
+
+
+// using ternery operator
+tip = bill <= 300 && bill >= 50 ? tip = 0.15 * bill : tip = 0.2 * bill
+console.log(`The bill was ${bill},the tip was ${tip}, and the total value ${bill + tip}`);
+*/
+
+//*************** 
+// 030 ES6 Classes and JS history
+//***************
