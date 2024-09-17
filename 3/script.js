@@ -578,8 +578,9 @@ for (let exercise = 1; exercise <= 3; exercise++) {
   */
 
 //********************** 
-// 050 While Loop
+// 049 While Loop
 //**********************
+
 
 /*
 for (let rep = 0; rep < 10; rep++) {
@@ -594,7 +595,7 @@ while (rep <= 10) {
   console.log(`Lifting weights repetition ${rep}`);
   rep++;
 }
-*/
+
 
 
 //random number generator;
@@ -607,3 +608,64 @@ while (dice !== 6) {
   if (dice === 6) console.log(`Loop ends`);
 
 }
+
+*/
+
+
+//********************** 
+// 050 Coding Challenge #4
+//**********************
+
+
+// const calcTip = function (bill) {
+//   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+// }
+
+// const bills = [125, 555, 44];
+// const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+// console.log(bills, tips);
+
+// const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+
+// console.log(total);
+// console.log(`Total for bill ${bills[0]} is ${total[0]} with tip ${tips[0]}.`);
+// console.log(`Total for bill ${bills[1]} is ${total[1]} with tip ${tips[1]}.`);
+// console.log(`Total for bill ${bills[2]} is ${total[2]} with tip ${tips[2]}.`);
+
+//MY SOLUTION
+
+const calcTip = function (bill) {
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+}
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+
+const tips = [];
+const totals = [];
+
+for (let i = 0; i < bills.length; i++) {
+  tips.push(calcTip(bills[i]));
+  totals.push(bills[i] + tips[i]);
+  console.log(`tips ${tips[i]}`);
+  console.log(`total ${bills[i]}`);
+}
+console.log(tips);
+console.log(bills);
+console.log(totals);
+
+let sum = 0;
+const calcAvg = function (arr) {
+  for (let j = 0; j < arr.length; j++) {
+    sum = sum + arr[j];
+
+  }
+  return sum / arr.length;
+}
+console.log(calcAvg(totals));
+console.log(calcAvg(bills));
+console.log(calcAvg(tips
+));
+
+
+
+
