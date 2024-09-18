@@ -83,8 +83,8 @@ Create a function 'printForecast' which takes in an array 'arr' and logs a strin
 
 Test Data 1 : [17,21,23]
 Test data 2: [12,5,-5,0,4]
-
 */
+
 const data1 = [17, 21, 23];
 const data2 = [12, 5, -5, 0, 4];
 
@@ -96,5 +96,9 @@ const printForecast = function (array) {
   console.log(str);
 
 }
+typeof data1;
+console.log(typeof (data1));
+
 printForecast(data1);
 printForecast(data2);
+
