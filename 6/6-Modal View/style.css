@@ -31,6 +31,11 @@ body {
   color: #444;
   border-radius: 10rem;
   cursor: pointer;
+  transition: all .3s;
+}
+
+.show-modal:hover {
+  transform: scale(1.01) translateY(-10px);
 }
 
 .close-modal {
@@ -42,6 +47,12 @@ body {
   cursor: pointer;
   border: none;
   background: none;
+  transition: all .3s;
+}
+
+.close-modal:hover {
+  color: #000;
+  transform: scale(1.01) translateY(-3px);
 }
 
 h1 {
@@ -80,7 +91,8 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  /* background-color: rgba(0, 0, 0, 0.6); */
+  background: linear-gradient(to bottom left, rgba(0, 0, 0, .1), rgba(0, 0, 0, 0.7));
   backdrop-filter: blur(3px);
   z-index: 5;
 }
