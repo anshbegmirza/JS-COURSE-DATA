@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modal</title>
+  <!-- Font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 62.5%;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #848A96;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    .messageBox {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 1rem;
+      height: auto;
+      width: 54rem;
+      max-width: 90%;
+    }
+
+    .message-portion {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .warning-sign {
+      height: 5rem;
+      width: 5rem;
+      background-color: #FDE2E2;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+    }
+
+    .warning-sign ion-icon {
+      color: #E2262A;
+      font-size: 3rem;
+    }
+
+    .message-action {
+      font-size: 1.8rem;
+      font-weight: 500;
+      margin-bottom: .5rem;
+    }
+
+    .message-desp {
+      font-size: 1.4rem;
+      color: rgba(0, 0, 0, 0.6);
+      text-wrap: wrap;
+      max-width: 40rem;
+    }
+
+    .closePopUp {
+      font-size: 4rem;
+      color: rgba(0, 0, 0, 0.6);
+      align-self: flex-start;
+      cursor: pointer;
+    }
+
+    .closePopUp:hover {
+      color: #000;
+    }
+
+    .btn {
+      padding: 1rem;
+      font-size: 1.6rem;
+      border: none;
+      cursor: pointer;
+      border-radius: .5rem;
+      font-weight: 600;
+      transition: all 0.2s;
+    }
+
+    .cancel-btn {
+      background-color: #fff;
+      border: 1px solid rgba(0, 0, 0, 0.3);
+    }
+
+    .cancel-btn:hover {
+      background-color: #ececec;
+    }
+
+    .deactivate-btn {
+      background-color: #E2262A;
+      color: #fff;
+    }
+
+    .deactivate-btn:hover {
+      background-color: #c42124;
+    }
+
+    .actionables {
+      display: flex;
+      justify-content: flex-end;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .click-here {
+      font-size: 2rem;
+      padding: 1rem 2rem;
+      border-radius: 1rem;
+      border: none;
+      cursor: pointer;
+      background-color: #fff;
+    }
+
+    .click-here:hover {
+      background-color: #fff8dc;
+    }
+
+    .deactivate-msg {
+      font-size: 3rem;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <button class="click-here btn">Click here!</button>
+  <div class="messageBox hidden" role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription">
+    <div class="message-portion">
+      <div class="warning-sign">
+        <ion-icon name="warning-outline" aria-label="Warning"></ion-icon>
+      </div>
+      <div class="message-1">
+        <p id="modalTitle" class="message-action">
+          Deactivate account
+        </p>
+        <p id="modalDescription" class="message-desp">Are you sure you want to deactivate your account? All of your data will be permanently
+          removed from our servers forever. This action cannot be undone.</p>
+      </div>
+
+      <ion-icon class="closePopUp" name="close-outline" aria-label="Close modal"></ion-icon>
+    </div>
+    <div class="actionables">
+      <button class="cancel-btn btn">Cancel</button>
+      <button class="deactivate-btn btn ">Deactivate</button>
+    </div>
+  </div>
+  <p class="deactivate-msg hidden">Account Deleted</p>
+  <!-- Ion-icons link -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+<script>
+  const clickhereBtnEl = document.querySelector('.click-here');
+  const messageBoxEl = document.querySelector('.messageBox');
+  const closeBtnEl = document.querySelector('.closePopUp');
+  const cancelBtnEl = document.querySelector('.cancel-btn');
+  const deactivateBtnEl = document.querySelector('.deactivate-btn');
+  const displayMsgEl = document.querySelector('.deactivate-msg');
+
+  const openMsg = () => {
+    messageBoxEl.classList.remove('hidden');
+    clickhereBtnEl.classList.add('hidden');
+  }
+
+  const closeMsg = () => {
+    messageBoxEl.classList.add('hidden');
+    clickhereBtnEl.classList.remove('hidden');
+  }
+
+  const actionSuccesful = () => {
+    messageBoxEl.classList.add('hidden');
+    clickhereBtnEl.classList.add('hidden');
+    displayMsgEl.classList.remove('hidden');
+  }
+
+  // Close modal on Escape key press
+  document.addEventListener('keydown', (pressedKey) => {
+    if (pressedKey.key === 'Escape' && !messageBoxEl.classList.contains('hidden')) {
+      closeMsg();
+    }
+  });
+
+  // Event listeners for actions
+  clickhereBtnEl.addEventListener('click', openMsg);
+  closeBtnEl.addEventListener('click', closeMsg);
+  cancelBtnEl.addEventListener('click', closeMsg);
+  deactivateBtnEl.addEventListener('click', actionSuccesful);
+</script>
+
+</html>

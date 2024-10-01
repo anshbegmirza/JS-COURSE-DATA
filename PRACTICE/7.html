@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+    rel="stylesheet">
+
+  <title>7-pagination</title>
+  <style>
+    /* write CSS here */
+    @import url(https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet);
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 62.5%;
+      font-family: 'Inter', sans-serif;
+      overflow: hidden;
+    }
+
+    body {
+      height: 100vh;
+      width: 100vw;
+      position: relative;
+      font-size: 2rem;
+      line-height: 1.7;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .pagination-container {
+      width: calc(100% - 2rem);
+      padding: 1rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      bottom: 0;
+      margin-bottom: 2rem;
+    }
+
+    .pagination-number,
+    .pagination-button {
+      font-size: 2.7rem;
+      background-color: transparent;
+      border: none;
+      margin: 0 0.2rem 0.2rem;
+      padding: 1rem;
+      height: 2.5rem;
+      min-width: 2.5rem;
+      color: #868686;
+    }
+
+    .pagination-button.disabled {
+      color: #cccccc;
+      pointer-events: none;
+    }
+
+    .pagination-number.active {
+      color: #000000;
+      font-weight: bold;
+    }
+
+    ul {
+      list-style-type: none;
+      margin-top: 2rem;
+      padding-left: 2rem;
+    }
+
+    li {
+      margin-bottom: 1.5rem;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <!-- Page data goes here -->
+    <ul id="Data-to-show" aria-live="polite" title="page_content" class="data-list" current-page="1">
+      <li>Data 1</li>
+      <li>Data 2</li>
+      <li>Data 3</li>
+      <li>Data 4</li>
+      <li>Data 5</li>
+      <li>Data 6</li>
+      <li>Data 7</li>
+      <li>Data 8</li>
+      <li>Data 9</li>
+      <li>Data 10</li>
+      <li>Data 11</li>
+      <li>Data 12</li>
+      <li>Data 13</li>
+      <li>Data 14</li>
+      <li>Data 15</li>
+    </ul>
+    <!-- Pagination container -->
+    <nav class="pagination-container">
+      <button id="prev-btn" class="pagination-button" aria-label="Previous page" title="Previous page">
+        Previous
+      </button>
+
+      <div class="page-numbers" id="pagination-numbers"></div>
+
+      <button id="next-btn" class="pagination-button" aria-label="Next page" title="Next-page">
+        Next
+      </button>
+    </nav>
+  </main>
+
+  <script>
+    // Selecting elements
+    const paginationNumbers = document.getElementById("pagination-numbers");
+    const dataFields = document.querySelectorAll("li");
+    const prevBtn = document.getElementById("prev-btn");
+    const nextBtn = document.getElementById("next-btn");
+
+    const paginationLimit = 3; // Limit to show on screen
+    const pageCount = Math.ceil(dataFields.length / paginationLimit); // Calculate total pages
+    let currentPage = 1;
+
+    // Disable/Enable button functions
+    const disableBtn = (button) => {
+      button.classList.add("disabled");
+      button.setAttribute("disabled", true);
+    };
+
+    const enableBtn = (button) => {
+      button.classList.remove("disabled");
+      button.removeAttribute("disabled");
+    };
+
+    // Page status to disable/enable buttons
+    const pageStatus = () => {
+      if (currentPage === 1) {
+        disableBtn(prevBtn);
+      } else {
+        enableBtn(prevBtn);
+      }
+
+      if (currentPage === pageCount) {
+        disableBtn(nextBtn);
+      } else {
+        enableBtn(nextBtn);
+      }
+    };
+
+    // Function to display items for the current page
+    const displayPage = (pageNumber) => {
+      const start = (pageNumber - 1) * paginationLimit;
+      const end = pageNumber * paginationLimit;
+
+      dataFields.forEach((item, index) => {
+        item.classList.add("hidden"); // Hide all items
+        if (index >= start && index < end) {
+          item.classList.remove("hidden"); // Show items for the current page
+        }
+      });
+
+      document.querySelectorAll(".pagination-number").forEach((btn) => {
+        btn.classList.remove("active"); // Remove active class from all buttons
+      });
+
+      document
+        .querySelector(`.pagination-number[data-page='${pageNumber}']`)
+        .classList.add("active"); // Set active class for current page
+    };
+
+    // Function to create pagination buttons
+    const createPagination = () => {
+      for (let i = 1; i <= pageCount; i++) {
+        const pageNumber = document.createElement("button");
+        pageNumber.innerText = i;
+        pageNumber.classList.add("pagination-number");
+        pageNumber.setAttribute("data-page", i);
+
+        // Event listener for each page number button
+        pageNumber.addEventListener("click", () => {
+          currentPage = i;
+          displayPage(currentPage);
+          pageStatus();
+        });
+
+        paginationNumbers.appendChild(pageNumber);
+      }
+    };
+
+    // Event listeners for next and previous buttons
+    nextBtn.addEventListener("click", () => {
+      if (currentPage < pageCount) {
+        currentPage++;
+        displayPage(currentPage);
+        pageStatus();
+      }
+    });
+
+    prevBtn.addEventListener("click", () => {
+      if (currentPage > 1) {
+        currentPage--;
+        displayPage(currentPage);
+        pageStatus();
+      }
+    });
+
+    // Initialize pagination
+    const initPagination = () => {
+      createPagination(); // Create pagination buttons
+      displayPage(currentPage); // Show first page of data
+      pageStatus(); // Update button states
+    };
+
+    // Call initPagination when page loads
+    window.addEventListener("load", initPagination);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tabs Component</title>
+  <style>
+    /* write CSS here */
+    *,
+    *::after,
+    *::before {
+      margin: 0;
+      padding: 0;
+      box-sizing: inherit;
+    }
+
+    html {
+      font-size: 62.5%;
+      font-family: 'Poppins', sans-serif;
+      overflow: hidden;
+    }
+
+    body {
+      background-color: #848A96;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    .container {
+      background: white;
+      height: auto;
+      width: 70rem;
+      padding: 1.5rem;
+    }
+
+    .tabs-options {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2); /* Extend line under tabs */
+    }
+
+    .tabs-options button {
+      flex-grow: 1;
+      padding: 1rem;
+      border: none;
+      color: rgba(0, 0, 0, 0.4);
+      background-color: transparent;
+      display: inline-block;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .tabs-options button:hover {
+      color: #2865ed;
+    }
+
+    /* Active tab styling (same as hover) */
+    .tabs-options button.active {
+      color: #2865ed;
+      border-bottom: 3px solid #2865ed;
+    }
+
+    .display-msg p {
+      font-size: 2rem;
+      color: rgba(0, 0, 0, 0.8);
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="tabs-options">
+      <button id="profileBtn" class="active">Profile</button>
+      <button id="dashboardBtn">Dashboard</button>
+      <button id="settingsBtn">Settings</button>
+      <button id="contactsBtn">Contacts</button>
+    </div>
+    <div class="display-msg">
+      <p id="profileMsg">
+        This is some placeholder content for the <b>Profile tab's associated content.</b> Clicking another tab will toggle
+        the visibility of this one for the next.
+      </p>
+      <p id="dashboardMsg" class="hidden">
+        This is some placeholder content for the <b>Dashboard tab's associated content.</b> Clicking another tab will
+        toggle the visibility of this one for the next.
+      </p>
+      <p id="settingsMsg" class="hidden">
+        This is some placeholder content for the <b>Settings tab's associated content.</b> Clicking another tab will
+        toggle the visibility of this one for the next.
+      </p>
+      <p id="contactsMsg" class="hidden">
+        This is some placeholder content for the <b>Contacts tab's associated content.</b> Clicking another tab will
+        toggle the visibility of this one for the next.
+      </p>
+    </div>
+  </div>
+
+</body>
+
+<script>
+  // Select buttons and paragraphs by their IDs
+  const profileBtn = document.getElementById('profileBtn');
+  const dashboardBtn = document.getElementById('dashboardBtn');
+  const settingsBtn = document.getElementById('settingsBtn');
+  const contactsBtn = document.getElementById('contactsBtn');
+
+  const profileMsg = document.getElementById('profileMsg');
+  const dashboardMsg = document.getElementById('dashboardMsg');
+  const settingsMsg = document.getElementById('settingsMsg');
+  const contactsMsg = document.getElementById('contactsMsg');
+
+  // Function to hide all tab content
+  function hideAllTabs() {
+    profileMsg.classList.add('hidden');
+    dashboardMsg.classList.add('hidden');
+    settingsMsg.classList.add('hidden');
+    contactsMsg.classList.add('hidden');
+  }
+
+  // Function to remove 'active' class from all buttons
+  function removeActiveClass() {
+    profileBtn.classList.remove('active');
+    dashboardBtn.classList.remove('active');
+    settingsBtn.classList.remove('active');
+    contactsBtn.classList.remove('active');
+  }
+
+  // Adding event listeners for each tab
+  profileBtn.addEventListener('click', function () {
+    hideAllTabs();
+    profileMsg.classList.remove('hidden');
+    removeActiveClass();
+    profileBtn.classList.add('active');
+  });
+
+  dashboardBtn.addEventListener('click', function () {
+    hideAllTabs();
+    dashboardMsg.classList.remove('hidden');
+    removeActiveClass();
+    dashboardBtn.classList.add('active');
+  });
+
+  settingsBtn.addEventListener('click', function () {
+    hideAllTabs();
+    settingsMsg.classList.remove('hidden');
+    removeActiveClass();
+    settingsBtn.classList.add('active');
+  });
+
+  contactsBtn.addEventListener('click', function () {
+    hideAllTabs();
+    contactsMsg.classList.remove('hidden');
+    removeActiveClass();
+    contactsBtn.classList.add('active');
+  });
+</script>
+
+</html>
