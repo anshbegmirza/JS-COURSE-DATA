@@ -30,3 +30,15 @@ video 80 to add and remove classes.
 115: Set is a collection of unique data. We cant use set to retrieve data, only to check unique data from a source like array or object.
 
 116 : Maps works in a similar way to sets. (collection of key value pairs ) (A map is iterated by using key property/value)
+
+117 : Sinces map are part of iterables we can also loop them.
+
+118 : Which data structure to use based on requirement, for simple list like information which we want to modify later we have to use arrays for unique items also to remove them later we have to use sets.
+
+Maps and objects are used when we are getting data from a api which we are going to use further in the application
+
+119 : Challenge #3
+
+120-123: String methods indexOf(),lastIndexOf(),slice(),split(),join(),tolowercase(),touppercase(),replace(),trim(),repeat(),startsWith(),endsWith(),padStart(),padEnd()
+
+126: setting default parameters in functions
