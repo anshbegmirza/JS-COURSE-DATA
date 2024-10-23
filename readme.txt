@@ -42,3 +42,25 @@ Maps and objects are used when we are getting data from a api which we are going
 120-123: String methods indexOf(),lastIndexOf(),slice(),split(),join(),tolowercase(),touppercase(),replace(),trim(),repeat(),startsWith(),endsWith(),padStart(),padEnd()
 
 126: setting default parameters in functions
+
+127: Value vs reference arguments in functions, works (similar to c program of swapping two nos.)
+Learned call by value and by refrence using a imaginery passport concept. JS does not have call/passing by reference. Only call/pass by value.
+
+128: Simple functions are known as first class functions and the function which receives another function as argument are known as higher order functions.
+
+129 : Learned about call back functions, and using different functions all together in one big function. Higher order function in practice. 
+
+130 : Functions returning function, used a function like greet to return another function.
+
+131 : Used this keyword and manually set it to something else using call() and apply() methods on a function.
+
+132 : Bind method, used to manually set the this keywords but it creates a new function
+
+133 : Challenge #1
+
+started from 153
+154 : The find method of arrays
+
+162 : The best video to revise array methods, which one to use when.
+
+23 array methods in js
