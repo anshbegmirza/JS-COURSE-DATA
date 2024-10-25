@@ -79,4 +79,10 @@ Learned about the remainder operator (%) and the divide (/), its difference and 
 169: Working BigInt
 How we can create bigint, use them, math operation does not work on bigints. Do not mix bigint with normal interger
 
-170: 
+// http://www.lingoes.net/en/translator/langcode.htm
+
+use the lingos site to get international codes for dates, along with language codes beside it.
+
+173 : Internationalizing dates, used intl date formate to set dates to international standard. Used locale from navigator to set it to users language settings.
+
+174:
