@@ -64,3 +64,19 @@ started from 153
 162 : The best video to revise array methods, which one to use when.
 
 23 array methods in js
+
+/////// FOLDER 12
+
+166:  Math and Rounding
+Keyfactors learned: Checking for number is a interger or not.Converting a string to number, not a number and to see if a value is a number or not. Parsing and how to use it.
+
+167:  Numbers, dates, intl and timers.
+Keyfactors learned: Learned about rounding up numbers, using floor, ceil and trunc. Used .toFixed(2) also in our bankist project.
+
+168: Remainder Operator
+Learned about the remainder operator (%) and the divide (/), its difference and how we can use it in some practical works.
+
+169: Working BigInt
+How we can create bigint, use them, math operation does not work on bigints. Do not mix bigint with normal interger
+
+170: 
