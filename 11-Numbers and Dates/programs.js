@@ -1,55 +1,57 @@
-// Write a JavaScript program to check if obj1 contains all the property values of obj2.
+// Write a JavaScript program to modify an object’s property in an array of objects.
 
-// Example 1:
-// Input: obj1: { name: "John", age: 23; degree: "CS" }, obj2: {age: 23, degree: "CS"}
-// Output: true
+// Input:  
+// arr = [
+// {
+//     employee_id: 1,
+//     employee_name: "Aman",
+// },
+// {
+//     employee_id: 2,
+//     employee_name: "Bhargava",
+// },
+// {
+//     employee_id: 3,
+//     employee_name: "Chaitanya",
+// },
+//  ]
 
-// Example 2:
-// Input: obj1: { name: "John", degree: "CS" }, obj2: {name: "Max", age: 23, degree: "CS"}
-// Output: false
+// Output: 
+// [
+//     { employee_id: 1, employee_name: 'Aman' },
+//     { employee_id: 2, employee_name: 'Rahul' },
+//     { employee_id: 3, employee_name: 'Chaitanya' }
+// ] 
 
-
-
-
-
-
-
-
-// program2
-
-// Write a JavaScript program to convert two-dimensional array in to an object.
-
-// Input:  [
-//     ["John", 12],
-//     ["Jack", 13],
-//     ["Matt", 14],
-//     ["Maxx", 15]
-// ]
-
-// Output: {
-//     "John": 12,
-//     "Jack": 13,
-//     "Matt": 14,
-//     "Maxx": 15
-// }
-
-
+'use strict';
 
 const inputArray = [
   {
-    product: "Laptop",
-    price: 1000,
-    quantity: 2,
+    employee_id: 1,
+    employee_name: "Aman",
   },
   {
-    product: "Phone",
-    price: 600,
-    quantity: 3,
+    employee_id: 2,
+    employee_name: "Bhargava",
   },
   {
-    product: "Monitor",
-    price: 250,
-    quantity: 1,
+    employee_id: 3,
+    employee_name: "Chaitanya",
   },
 ];
 
+const modifyProperty = function (arr) {
+  const modifiedArray = arr.map(employee => {
+    if (employee.employee_id === 2) {
+      return {
+        ...employee,
+        employee_name: "Rahul",
+      };
+    }
+    return employee;
+  });
+  return modifiedArray;
+}
+
+const check = modifyProperty(inputArray);
+console.log(check);
