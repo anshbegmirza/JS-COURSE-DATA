@@ -85,4 +85,39 @@ use the lingos site to get international codes for dates, along with language co
 
 173 : Internationalizing dates, used intl date formate to set dates to international standard. Used locale from navigator to set it to users language settings.
 
-174:
+174: Learned about internationalizing numbers api, and used it to set specific data like currency type and seperator between numbers using users locale.
+
+175: Timers: Set timers and Set intervals
+Learned how to create setTimeout() functions and to use a delay of 3000 (3seconds) written in milliseconds, on our bankist app.
+
+176: Implementing a countdown timer
+Created a simple timer and set into login for like 2 mins, also on doing any activity like transfer money or loan the timer resets and starts again from 2 mins. Also after 2mins the application will get logged out.
+
+--------------------------------------------------------------------------------------------------------------------------
+                                              ***** FOLDER 13 *****  
+                                              Advanced Dom & Events
+--------------------------------------------------------------------------------------------------------------------------
+
+177 : Section Intro 
+
+179 : Project : Bankist Website
+General overview of the bankist marketting website, what we are going to create in this section. Some small changes in the model functionality.
+
+180: How the DOM Really works
+How all the nodes are connected with other nodes, concept of inheritance and a diagram to understand how they interact with each other
+
+181: Selecting creating & Deleting Elements
+
+always select your elements at the top of page.
+// used for selecting
+used queryselector, queryselectorall, getelementbyID,getelementbyclassname,getElementsByTagName
+
+Used insertadjacenthtml, innerhtml,textcontent,createelement,add, appened,prepend,before,after,
+
+// for Deleting
+remove and parentchild mthod (older way)
+
+182 : Styles Attributes and Classes
+Learned about how to add styles to elements, create new elements using js set various information like data, attributes and to get them also.
+
+
