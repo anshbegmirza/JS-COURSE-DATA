@@ -121,3 +121,28 @@ remove and parentchild mthod (older way)
 Learned about how to add styles to elements, create new elements using js set various information like data, attributes and to get them also.
 
 
+183: Implementing Smooth Scrolling
+Learned how to calc the height and width of the users viewport, used that to implement old way of scroll to.
+
+Also learned newer way of doing it, using scrollIntoView() function.
+
+184: Types of events and event handlers.
+Used different ways to add events to our elements. addEventListener, onmouseenter, and html js way. 
+Also used removeEventListener to remove events.
+
+185: Event Propogation: Bubbling and Capturing.
+How the events travel from document to the target, where the start and end till bubble phase.
+
+186: Event Propagation in practice
+Learned how the event propagation works, in real using a random integer generator and a random color generator assigned them to a links.
+
+187: Event Delegation Implementing Page Navigation
+Used matching strategy to implement nav links and smooth behavior.
+
+188: DOM Traversing
+Learned how to travers meaning moving up and down in dom, getting elements from top and bottom. getting child elements, parent elements.
+
+189: Building a tabbed component.
+Created a simple toggling tab component by adding and removing active classes.
+
+190: Passing Arguments to event handlers.
