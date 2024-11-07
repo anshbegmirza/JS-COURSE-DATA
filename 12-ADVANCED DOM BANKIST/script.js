@@ -20,6 +20,10 @@ const tabs = document.querySelectorAll('.operations__tab');
 const tabsContainer = document.querySelector('.operations__tab-container');
 const tabsContent = document.querySelectorAll('.operations__content');
 
+
+const nav = document.querySelector('.nav');
+
+
 ///////////////////////////////////////
 // Modal window
 const openModal = function (e) {
@@ -153,6 +157,159 @@ tabsContainer.addEventListener('click', (e) => {
 
 });
 
+///////////////////////////////////////
+// MENU FADE ANIMATION
+const handleHover = function (e, opacity) {
+  if (e.target.classList.contains('nav__link')) {
+    const link = e.target;
+    // console.log(link);
+    const siblings = link.closest('.nav').querySelectorAll('.nav__link');
+    const logo = link.closest('.nav').querySelector('img')
+
+    siblings.forEach(el => {
+      if (el !== link)
+        el.style.opacity = this;
+    })
+    logo.style.opacity = this;
+  }
+}
+
+
+//passing 'argument' into handler.
+nav.addEventListener('mouseover', handleHover.bind(0.5))
+
+nav.addEventListener('mouseout', handleHover.bind(1))
+
+
+// easier way, but violates the dry principle so we have to refactor it.
+/*
+nav.addEventListener('mouseover', function (e) {
+  if (e.target.classList.contains('nav__link')) {
+    const link = e.target;
+    // console.log(link);
+    const siblings = link.closest('.nav').querySelectorAll('.nav__link');
+    const logo = link.closest('.nav').querySelector('img')
+
+    siblings.forEach(el => {
+      if (el !== link)
+        el.style.opacity = 0.5;
+    })
+    logo.style.opacity = 0.5;
+  }
+});
+
+nav.addEventListener('mouseout', function (e) {
+  if (e.target.classList.contains('nav__link')) {
+    const link = e.target;
+    // console.log(link);
+    const siblings = link.closest('.nav').querySelectorAll('.nav__link');
+    const logo = link.closest('.nav').querySelector('img')
+
+    siblings.forEach(el => {
+      if (el !== link)
+        el.style.opacity = 1;
+    })
+    logo.style.opacity = 1;
+  }
+});
+*/
+
+
+
+/////////////////////////
+// 191: Implementing a Sticky Navigation the scroll event.
+// Sticky navigation
+/*
+const initialCords = section1.getBoundingClientRect()
+console.log(initialCords);
+
+window.addEventListener('scroll', function (e) {
+  // console.log(window.scrollY);
+
+  if (window.scrollY > initialCords.top)
+    nav.classList.add('sticky');
+  else nav.classList.remove('sticky');
+})
+*/
+
+///////////////////////////////////////
+//192: A Better Way: The Intersection Observer API.
+
+// will be useful for infinite scrolling test and much more.
+
+// to understand how the intersection observer api works,
+
+// try yourself by changing the threshold values from 0 to 0.1 0.2 and so on.
+
+// log the result to the console and see the difference on the intersectionRatio.
+
+// const obsCallback = function (entries, observer) {
+//   entries.forEach(entry => {
+//     console.log(entry);
+
+//   });
+// };
+
+
+// const obsOptions = {
+//   root: null,
+//   threshold: [0, 0.2],
+
+// }
+
+// const observer = new IntersectionObserver(obsCallback, obsOptions);
+// observer.observe(section1);
+// console.log(observer);
+
+const header = document.querySelector('.header');
+
+const navHeight = nav.getBoundingClientRect().height;
+// console.log(navHeight.height);
+
+const stickyNav = function (entries) {
+  const [entry] = entries;
+  // console.log(entry);
+
+  if (!entry.isIntersecting)
+    nav.classList.add('sticky');
+  else nav.classList.remove('sticky');
+}
+
+const headerObserver = new IntersectionObserver(stickyNav, {
+  root: null,
+  threshold: 0,
+  rootMargin: `-${navHeight}px`,
+});
+headerObserver.observe(header);
+
+
+///////////////////////////////////////
+//193: Revealing Elements on Scroll 
+
+const allSections = document.querySelectorAll('section')
+// console.log(allSections);
+
+
+const revealSection = function (entries, observer) {
+  const [entry] = entries;
+  console.log(entry);
+
+  if (!entry.isIntersecting) return
+
+  entry.target.classList.remove('section--hidden');
+  observer.unobserve(entry.target);
+}
+
+
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.18,
+})
+
+allSections.forEach(function (section) {
+  sectionObserver.observe(section);
+  section.classList.add('section--hidden');
+});
 
 ///////////////////////////////////////
 // Experimenting

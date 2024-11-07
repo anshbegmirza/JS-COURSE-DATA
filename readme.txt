@@ -146,3 +146,17 @@ Learned how to travers meaning moving up and down in dom, getting elements from 
 Created a simple toggling tab component by adding and removing active classes.
 
 190: Passing Arguments to event handlers.
+Created a nice hover effect, on the navigation using a handleHover function and used it on mouseover, and mouseout.
+
+191: Implementing a Sticky Navigation the scroll event.
+Created a simple sticky nav using scroll event on window object then add sticky class and removing it.
+
+192: A Better Way: The Intersection Observer API.
+Used intersection observer api and improved the sticky nav functionality without using the scroll event on window object, this the code is alot system intensive. 
+
+
+193: Revealing Elements on Scroll 
+Created a simple reveal on scroll animation using intersection observer api, used it on entry and added the section-hidden class to it.
+
+
+194: Lazy Loading Images
