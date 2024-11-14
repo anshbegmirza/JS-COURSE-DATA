@@ -160,3 +160,47 @@ Created a simple reveal on scroll animation using intersection observer api, use
 
 
 194: Lazy Loading Images
+Created a smooth on scroll load image thing for our bankist website, features section. Just removed a lazy-img class using intersectionObserver api, and used data-src for the same. (paste the code in chat and understand it better for revision.)
+
+
+195: Building a Slider Component Part 1
+
+
+
+// Events delegation means rather than assigning functionality to each component we assign it to the parent component of thos elements.
+
+// All the custom data variables are in the data variable like data-slide (in html), then it is stored in dataset.slide (in js)
+
+196: BUilding a slider component part 2
+
+197: Lifecycle of DOM EVENTS
+How we can see if the dom is loaded, pop the user to leave the site in the middle of something in which data could be lost.
+
+198: Efficient Script Loading: Defer & Async
+
+ <!-- To load our on scripts we should use this way. -->
+  <script defer src="script.js"></script>
+in the head tag 
+
+Different ways of loading a js file in a browser (html)
+
+How defer and async js works in the browser.
+
+When to Use defer vs async:
+Use defer for scripts that are dependent on the complete HTML structure or need to maintain execution order.
+
+Use async for independent scripts that don't need to wait for other scripts or the full HTML parsing, allowing for faster page loading.
+
+
+--------------------------------------------------------------------------------------------------------------------------
+                                              ***** FOLDER 14 *****  
+                                                       OOP
+--------------------------------------------------------------------------------------------------------------------------
+
+201 : What is OOP?
+
+Brief overview of what oops is.
+encapsulation, abstraction, inheritance and polymorphism. explained
+classes and objects explained.
+
+202: OOP in JS
