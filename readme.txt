@@ -192,15 +192,41 @@ Use defer for scripts that are dependent on the complete HTML structure or need 
 Use async for independent scripts that don't need to wait for other scripts or the full HTML parsing, allowing for faster page loading.
 
 
---------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------
                                               ***** FOLDER 14 *****  
                                                        OOP
---------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------
 
 201 : What is OOP?
 
-Brief overview of what oops is.
+--Brief overview of what oops is.
 encapsulation, abstraction, inheritance and polymorphism. explained
 classes and objects explained.
 
 202: OOP in JS
+
+203: Constructor Functions with new Operator
+
+204: Prototypes, 
+--Learned how prototypes work in js, how they are assigned to an object, how they are called.
+
+205. Prototypal inheritance and the Prototype chain
+--How the protoypes are chained on one another, see the image for more information
+
+206. Prototypal Inheritance on Built-in Objects.
+--How prototypal inheritance works, also do read mdn documentation for more information and understanding
+
+207. Coding Challenge #1
+-- OOP is a really nice way to structure our code into a nice formatted smaller modular objects which can later be called multiple times depending upon the need. 
+
+208: ES 6 Classes
+ 0. Classes are just functions disguised.
+ 1. Classes are NOT hoisted 
+--meaning we can't use them before they are declared, we have to declare them first to use them.
+ 2.classes are first-class citizens
+ 3. Classes are executed in strict mode.
+
+ 209: Setters & Getters
+ We can set and get variables to a class or function depening upon our need, less used method.
+
+ 210: Static Methods
