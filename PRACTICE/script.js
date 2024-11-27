@@ -1,76 +1,33 @@
-// Merge two arrays and remove duplicate items from the merged array in JavaScript.
+// Write a JavaScript function to find the difference between two arrays.
 
-// Sample input:
-// arr1 = [1, 2, 3, 4, 5, 6];
-// arr2 = [3, 4, 5, 7];
+// Sample Input:
+// arr1 = [1, 2, 3]
+// arr2 = [100, 2, 1, 10]
 
-// Expected output: [1, 2, 3, 4, 5, 6, 7]
+// Expected Output: c = [3, 10, 100]
+
 'use strict';
 
-const arr1 = [1, 2, 3, 4, 5, 6];
-const arr2 = [3, 4, 5, 7];
+const arr1 = [1, 2, 3];
+const arr2 = [100, 2, 1, 10];
 
 
-const mergeArrayAndRemoveDuplicates = function (arr1, arr2) {
-  //Merging two arrays
-  arr1 = arr1.concat(arr2);
-
-  //Removing Duplicates
-  for (let i = 0; i < arr1.length; i++) {
-
-    for (let j = i + 1; j < arr1.length; j++) {
-      if (arr1[i] === arr1[j]) {
-        arr1.splice(j, 1); // remove duplicate
-        j--; // adjusted index
-      }
-    }
-  }
-  return arr1;
-}
-
-console.log(mergeArrayAndRemoveDuplicates(arr1, arr2));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-const mergeArray = function (arr1, arr2) {
-  let arr3 = [];
-
-  for (let i = 0; i < arr1.length; i++) {
-    arr3.push(arr1[i]);
-  }
-
+const calcDifference = function (arr1, arr2) {
+  let unique = [];
+  //checking in 1st
   for (let i = 0; i < arr2.length; i++) {
-    let isInArray3 = false;
-
-    for (let j = 0; j < arr3.length; j++) {
-      if (arr2[i] === arr3[j]) {
-        isInArray3 = true;
-        break;
-      }
-    }
-
-    if (!isInArray3) {
-      arr3.push(arr2[i]);
+    if (!arr1.includes(arr2[i])) {
+      unique.push(arr2[i]);
     }
   }
 
-  return arr3;
-}
+  //checking in 2nd
+  for (let i = 0; i < arr1.length; i++) {
+    if (!arr2.includes(arr1[i])) {
+      unique.push(arr1[i]);
+    }
+  }
+  return unique;
+};
 
-// console.log(mergeArray(arr1, arr2));
-
-const arr3 = [2, 3, 13, 2, 3, 5];
-const arr4 = [2, 3, 3, 4, 5, 6, 7,];
-console.log(mergeArray(arr3, arr4));*/
+console.log(calcDifference(arr1, arr2));

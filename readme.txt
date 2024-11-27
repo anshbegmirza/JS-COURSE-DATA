@@ -230,3 +230,28 @@ classes and objects explained.
  We can set and get variables to a class or function depening upon our need, less used method.
 
  210: Static Methods
+
+
+---Date 25th November,24
+
+210: Static Methods
+
+211: Object Create
+
+212: Codding Challenge
+
+213: Inheritance Between Classes, constructor functions.
+
+214: Coding Challenge #3
+
+--Date 26th November,24
+
+215: Inheritance between classes es6 classes
+
+216: Inheritance Between _Classes__ Object.create
+
+217: 217 Another Class Example
+
+218 Encapsulation_ Protected Properties and Methods
+
+219 Encapsulation_ Private Class Fields and Methods
