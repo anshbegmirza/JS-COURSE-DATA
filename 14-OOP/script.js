@@ -550,6 +550,8 @@ console.log(`*********************`);
 // public methods,
 // private methods,
 
+// there is also a static version for all these 4.
+
 
 class AccountCl {
 
@@ -569,6 +571,8 @@ class AccountCl {
     console.log(`Thanks for opening a account,${owner}!`);
   }
 
+
+  // these are also public methods
   // Public Interface
   getMovements() {
     return this.#movements;
@@ -576,22 +580,37 @@ class AccountCl {
 
   deposit(val) {
     this.#movements.push(val);
+    return this;
   }
 
   withdraw(val) {
     this.deposit(-val);
+    return this;
+
   }
 
-  _approveLoan(val) {
+
+
+  requestLoan(val) {
+    if (this.#approveLoan(val)) {
+      this.deposit(val)
+      console.log(`Loan approved of ${val} ${this.currency}`);
+      return this;
+    }
+  }
+
+  static helper() {
+    console.log('Helper');
+
+  }
+
+  //4) Private methods
+  #approveLoan(val) {
     return true;
   }
 
-  requestLoan(val) {
-    if (this._approveLoan(val)) {
-      this.deposit(val)
-      console.log(`Loan approved of ${val} ${this.currency}`);
-    }
-  }
+  // to write a private method you have to add a # symbol before the name.
+  // not used because browsers except google chrome does not support it.
 }
 
 const acc1 = new AccountCl(`Jonas`, `EUR`, 1111);
@@ -601,11 +620,32 @@ acc1.deposit(250)
 acc1.deposit(200)
 acc1.withdraw(140)
 acc1.requestLoan(1000);
-acc1._approveLoan(1000)
+// acc1.#approveLoan(1000)
 console.log(acc1);
 console.log(acc1._pin);
 console.log(acc1.getMovements());
 
-
+AccountCl.helper();
 // Private field '#movements' must be declared in an enclosing class
 // console.log(acc1.#movements); 
+
+
+
+// 220 : Chaining methods
+console.log(`*********************`);
+console.log(`220 : Chaining methods`);
+console.log(`*********************`);
+
+// chaining methods
+
+acc1.deposit(300).deposit(500).withdraw(35).requestLoan(25000).withdraw(4000);
+
+
+//  221: es6 classes summary
+
+console.log(`*********************`);
+console.log(`221: es6 classes summary`);
+console.log(`*********************`);
+
+// general overview of a classes work in js, how we can use oop in JS.
+

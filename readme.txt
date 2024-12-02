@@ -255,3 +255,59 @@ classes and objects explained.
 218 Encapsulation_ Protected Properties and Methods
 
 219 Encapsulation_ Private Class Fields and Methods
+
+--Date 27th November,24
+
+220 : Chaining methods
+
+221: es6 classes summary
+
+222: Coding Challenge #4.
+
+
+--------------------------------------------------------------------------------------------------------------------
+                                              ***** FOLDER 15 *****  
+                                                       MAPTY
+--------------------------------------------------------------------------------------------------------------------
+
+// SINCE IT IS A MINI PROJECTS LEARNINGS WILL BE WRITTEN HERE.
+
+
+223: SECTION INTRODUCTION
+
+225: PROJECT OVERVIEW
+  --:: GENERAL OVERVIEW OF THE MAPTY PROJECT, COPIED THE FILES. 
+
+226: HOW TO PLAN A WEB PROJECT
+  --:: View the slide images for a better understanding of how to start a project.
+
+  General guidnace steps are
+  -- Understand what user needs
+  -- Identify what are the features from above infro.
+  -- Create a rough outline about how you are going to implement it using a flowchart.
+  -- Start with the implementation.
+
+227: Using the geolocation api
+
+  --Geolocation API : 
+    The Geolocation API is a browser-based JavaScript API that allows websites and web applications to access the geographical location of a user's device, such as their latitude, longitude, and sometimes altitude, accuracy, and speed. This can be useful for various applications, such as displaying location-based information, providing directions, or enabling location-based services.
+
+
+--Date 28th November,24
+
+228: Displayed a map using leaflet
+
+  -- Leaflet:   A Leaflet is a lightweight, open-source JavaScript library used for building interactive maps for websites and web applications. It is widely used because it is simple to implement, has good performance on both desktop and mobile devices, and offers a wide range of features for creating dynamic, customizable maps.
+
+  -- Used a third party library to add map to our mapty project.
+
+229: Displaying a map marker
+  Displayed individual markers wherever a user click on the map, stays their for longer.
+
+  Used leaflet documentation to implement it.
+
+
+230: Rendering Workout Input form
+  --When a user clicks on the map, a map with basic workout detail input is given, thereby they have to fill it and press enter so that form is submitted, and a marker is appeared on the screen.
+
+231: Project Architecture

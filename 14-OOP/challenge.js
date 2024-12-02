@@ -118,7 +118,7 @@ console.log(`*********************`);
 console.log(`214: Coding Challenge #3`);
 console.log(`*********************`);
 
-
+/*
 const Car = function (make, speed) {
   this.make = make
   this.speed = speed;
@@ -165,4 +165,68 @@ tesla.accelerate();
 tesla.accelerate();
 
 // for prototypes or methods with same name the one which appears first is called first.
+*/
 
+// 222: Coding Challenge #4.
+console.log(`*********************`);
+console.log(`222: Coding Challenge #4.`);
+console.log(`*********************`);
+
+
+// AIM : To recreate challenge 3 using es 6 classes.
+
+
+class CarCl {
+  constructor(make, speed) {
+    this.make = make;
+    this.speed = speed;
+  }
+
+  accelerate() {
+    this.speed += 10;
+    console.log(`New Speed is ${this.speed} km/h`);
+    return this;
+  }
+
+  brake() {
+    this.speed -= 5;
+    console.log(`New Speed is ${this.speed} km/h`);
+    return this;
+  }
+
+  get speedUS() {
+    return this.speed / 1.6;
+  }
+
+  set speedUS(speed) {
+    this.speed = speed * 1.6;
+  }
+};
+
+class EVCL extends CarCl {
+
+  #charge;
+
+  constructor(make, speed, charge) {
+    super(make, speed);
+    this.#charge = charge;
+  }
+
+
+  chargeBattery(chargeTo) {
+    this.#charge = chargeTo;
+    return this;
+  }
+
+  accelerate(speed) {
+    this.speed += 20;
+    this.#charge--;
+    console.log(`${this.make} is going at ${this.speed} km/h with a charge of ${this.charge}%`);
+    return this;
+  }
+
+}
+
+
+const rivian = new EVCL('Rivian', 120, 23);
+rivian.break().accelerate()
