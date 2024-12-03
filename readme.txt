@@ -311,3 +311,154 @@ classes and objects explained.
   --When a user clicks on the map, a map with basic workout detail input is given, thereby they have to fill it and press enter so that form is submitted, and a marker is appeared on the screen.
 
 231: Project Architecture
+
+232 Refactoring for Project Architecture
+
+233 Managing Workout Data_ Creating Classes
+
+234 Creating a New Workout
+
+235 Rendering Workouts
+
+236 Move to Marker On Click
+
+237 Working with localStorage
+
+238 Final Considerations
+
+
+--------------------------------------------------------------------------------------------------------------------
+                                                ***** FOLDER 16 *****  
+                                                  Asynchronous JS
+--------------------------------------------------------------------------------------------------------------------
+
+239: Section Intro 
+
+What is Async JavaScript?
+Async JavaScript refers to techniques that allow JavaScript to handle tasks asynchronously. This is crucial because JavaScript is single-threaded, meaning it can only execute one task at a time. With asynchronous programming, JavaScript can perform tasks like fetching data, reading files, or setting timers without blocking the main thread. This ensures a smoother user experience, especially for tasks that might take time.
+
+241: Asynchronous JavaScript, AJAX and APIs
+
+--what is ajax?
+-- Asynchronous javascript and xml: allows us to communicate with remote web servers in an asynchronous way.
+
+-- With AJAX calls, we can request data from web servers dynamically.
+
+What is API?
+
+-- Application programming interface: piece of software that can be used by another piece of software, in order to allow applications to talk to each other.
+
+Example : DOM API, Geolocation API, Leaflet.
+
+What we generally use in async js is online api, which technically runns on a server, receives requests for data and sends data back as response.
+
+                                "There is an API for everything"
+
+XML = data format
+XML (Extensible Markup Language) is a markup language designed for storing and transporting data. It is both human-readable and machine-readable, making it widely used for data exchange between systems. XML was standardized by the World Wide Web Consortium (W3C).
+
+json = js object but in string form
+most apis use json data formate rather than xml
+
+242: Our First AJAX Call_ XMLHttpRequest
+
+To get data from a server we use the get method
+
+Every api that we use should have a yes/no for cors = cross origin resource sharing
+
+Used a public api named rest countries and used it to generate cards for different countries based on their names only 
+
+243: [OPTIONAL] How the Web Works_ Requests and Responses
+
+-- How the web works?
+ANS -- 
+1. Your Browser Sends a Request
+You open a browser (like Chrome or Firefox) and type a website address, like www.google.com.
+The browser sends a request over the internet to the computer (called a server) where that website is stored.
+
+2. The Internet Finds the Server
+Your request travels through a network of cables, satellites, and routers.
+A system called DNS (like a phonebook for the internet) helps find the IP address of the server where www.google.com lives.
+
+3. The Server Responds
+Once your request reaches the server, the server prepares the content (like HTML, CSS, JavaScript, or images).
+The server sends this content back to your browser over the internet.
+
+4. Your Browser Displays the Website
+Your browser receives the content and understands how to show it.
+HTML: Provides the structure (like headings, paragraphs, images).
+CSS: Makes it look nice (like colors, fonts, layout).
+JavaScript: Adds interactivity (like buttons that do things when clicked).
+Extra Details (Optional)
+Web Pages Can Be Dynamic: Some websites pull fresh data (like your Instagram feed) from the server whenever you visit.
+Secure Connections: If the website uses HTTPS, your data is encrypted, making it safer.
+In Short
+You ask for a page → The internet finds the server → The server sends the page back → Your browser shows it to you.
+Let me know if you'd like me to explain any part in more detail!
+
+What is the difference between HTTP and HTTPS
+
+Ans : -- The main difference between HTTP and HTTPS is security. Here's a simple breakdown:
+
+1. HTTP (HyperText Transfer Protocol)
+What It Does: HTTP is a protocol used to transfer data (like text, images, and videos) between your browser and a server.
+No Encryption: Data sent through HTTP is in plain text, meaning anyone who intercepts the connection (like hackers) can see or modify the information.
+Use Case: Suitable for non-sensitive information (e.g., browsing public articles).
+
+
+2. HTTPS (HTTP Secure)
+What It Does: HTTPS is just HTTP with an added layer of security using SSL/TLS encryption.
+Encryption: Data is scrambled (encrypted) before it’s sent, so even if someone intercepts it, they can’t read it.
+Authentication: HTTPS ensures you're communicating with the intended website (prevents impersonation attacks).
+Use Case: Essential for sensitive data (e.g., online banking, shopping, and login pages).
+
+How HTTPS Works
+--The website gets an SSL/TLS certificate (a digital ID proving it's legitimate).
+  When you visit the site:
+    Your browser and the server establish a secure, encrypted connection using this certificate.
+    All data exchanged is encrypted, making it secure.
+
+
+
+244: Welcome to Callback Hell
+
+Callback Hell : when we have a lot of nested async callbacks after callbacks to something like finding neighbour and its neighbour and its neighbour and so that particular is known as call back hell.
+
+also see the setTimeout call back example for better understanding.
+
+245: Promises and the Fetch API
+
+--What are promises?
+  An object that is used as a placeholder for the future result of an async operation
+
+or
+
+  A container for async delivered value.
+
+or
+
+ A container for a future value.
+
+
+Promise that I will revceive money, if I guess the correct outcome.
+  I buy lottery ticket (promise) right network
+  |
+  |
+  |
+  V
+  Lotery draw happens asynchronously
+
+If correct outcome, I receive money, because it was Promised !
+
+246: Consuming Promises
+-- JSon method is available to all the objects coming from the fetch function. so we can use it.
+
+-- very nice lecture do revise this before giving the test it will surely help.
+
+247: Chaining Promises
+
+251: Asynchronous Behind the Scenes_ The Event Loop
+Rewatch this video atleast 2 time after completing the whole course for understanding how the async js works bts scenes and so that you will be able to perform well in a js interview. 
+
+
+==== After completing the JS course creata simple book for revision having all the conclusion and guide for this course and JS in whole.
