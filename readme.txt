@@ -455,10 +455,111 @@ If correct outcome, I receive money, because it was Promised !
 
 -- very nice lecture do revise this before giving the test it will surely help.
 
-247: Chaining Promises
+
 
 251: Asynchronous Behind the Scenes_ The Event Loop
 Rewatch this video atleast 2 time after completing the whole course for understanding how the async js works bts scenes and so that you will be able to perform well in a js interview. 
+
+
+Dec 4Th 2024
+247: Chaining Promises
+We used a fetch function and input it the url from which we want to get the country (api's url) after that we used a then method on it and then for neighbour part also all in one go.
+
+248: Handling Rejected Promises
+When a promise is rejected we have to write a second function for that in the first then function. 
+
+(Revise this once when you are free.)
+
+
+249: Throwing Errors Manually
+While working on a big project and the same code starts to appear again, create a helper function and use that instead. Also you have to throw some error msgs yourself for future.
+
+-- practice this concept to implement it correctly.
+
+250: Coding Challenge #1
+--- THE BEST VIDEO TO REVISE FETCH, then and promises with catch error also.
+
+
+252: The Event Loop in Practice
+ Please view the code and its output and the lecture before this to understand what a event loop really is.
+
+
+253: Building a Simple Promise
+  --What is a Promise?
+    A Promise in JavaScript is an object that represents the eventual completion (or failure) of an asynchronous operation and its resulting value. It allows you to write cleaner, more manageable code for handling asynchronous tasks, such as fetching data from an API, without deeply nesting callbacks (also known as "callback hell").
+
+  Used a set timeout and replicated the call back hell example again but this time in a more structured way than before, more logical also which is easyily understood by any.
+
+254: Promisifying the Geolocation API
+  -- Look for the code and its output, we have just combined the geolocation api with whereamI function to render the country that we are in (for me its INDIA)
+
+255: Coding challenge #2
+  -- Really nice video also good for revising the promise approach of creating new one and then assigning a new function to it.
+
+256: Consuming Promises with Async_Await
+
+  what is a async function?
+    -- A async function is a function which keeps running in the background and keep on executing the code. 
+
+  Async await function is a synthetic sugar over the fetch and then method.
+  It still uses promises but in a indirect way.
+
+ So what basically we did was that we craeted a async await function which will do the same thing as promise and then but this is a bit simple to understand and easy to write also.
+
+ Key learning: Keep the promise method in your mind, so that you will be Efficient in creating aysnc await function.
+
+257: Error Handling With try...catch 
+Really nice way of handling errors using try block for actual code we wanna try, and its error in the catch block.
+
+258: Returning Values from Async Functions
+The first few mins of the video actually explains how the async await function works in JS !
+
+  What is an IIFE ?
+  ANS -- 
+        (function() {
+                    console.log("I run immediately!");
+                    })();
+
+259: Running Promises in Parallel
+  We used Promise.all() to run all the promises in one go, it is good for the user as it runs everything in one go and saves a lot of time.
+
+  then we can extract an array using it using map method of array on it and then we can flat it.
+
+260: Other Promise Combinators_ race, allSettled and any
+
+  - What is Promise.race() in JS?
+  --Promise.race() in JavaScript is a method that takes an array (or any iterable) of promises and returns a new promise that settles (resolves or rejects) as soon as one of the promises in the array settles.
+
+    --: If the first promise resolves, the returned promise resolves with that value.
+    --: If the first promise rejects, the returned promise rejects with that reason.
+
+    So as the name suggests the promise.race is basically is a promise in which the one which wins the race is considered as a settled is returned as a value.
+
+  - What is Promise.any() in JS?
+    -- Promise.any() in JavaScript is a method that takes an array (or any iterable) of promises and returns a new promise that resolves as soon as any one of the promises in the array resolves.
+
+    --If all the promises reject, the returned promise rejects with an AggregateError, which contains all the rejection reasons.
+
+      --: It resolves with the first successful (resolved) promise.
+      --: If all promises reject, it rejects with an AggregateError.
+
+
+  - What is Promise.allSettled()? 
+    -- Promise.allSettled() in JavaScript is a method that takes an array (or any iterable) of promises and returns a new promise that resolves when all promises have settled, meaning they are either resolved or rejected.
+
+    The result is an array of objects, where each object contains:
+      --: status: either "fulfilled" if the promise was resolved, or "rejected" if it was rejected.
+      --: value: the resolved value (only if the promise was fulfilled).
+      --: reason: the reason for rejection (only if the promise was rejected).
+
+    Key points:
+      --: It waits for all promises to settle (either resolved or rejected).
+      --: Unlike Promise.all(), it does not reject if some promises reject. It always resolves, providing information about the results of all promises.
+
+
+
+261: Coding Challenge #3
+
 
 
 ==== After completing the JS course creata simple book for revision having all the conclusion and guide for this course and JS in whole.
