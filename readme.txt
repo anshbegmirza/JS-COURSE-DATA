@@ -563,3 +563,42 @@ The first few mins of the video actually explains how the async await function w
 
 
 ==== After completing the JS course creata simple book for revision having all the conclusion and guide for this course and JS in whole.
+
+--------------------------------------------------------------------------------------------------------------------
+                                                ***** FOLDER 17 *****  
+                                                Modern JS DEVELOPEMENT
+--------------------------------------------------------------------------------------------------------------------
+
+Date 9th Dec, 24
+
+264: An Overview of Modern JavaScript Development
+
+We dont write JS in one single file, we write in smaller modular structures for specific componenets, and then we use a soft like babel to combine it.
+We use a build process.
+And use a JS bundlers.
+
+Definition: Transpiling is the process of converting code written in one language or version of a language into another language or a different version of the same language.
+
+Why It's Needed: 
+
+-- It allows developers to write modern JavaScript (ES6+) while ensuring compatibility with older browsers that may not support those features.
+
+265: An Overview of Modules in JavaScript
+
+Module: A reusable piece of code that encapsulates implementation details;
+
+Usually a standalone file, but it does not have to be.
+
+Thoery lecture how import and export work in JS.
+ 
+266: Exporting and Importing in ES6 Modules
+ Imports are not copies of exports but they are instead a live-connection of exports.
+
+267: The Module Pattern
+
+ What is a closure in JS ?
+ -- A closure in JavaScript is a function that remembers and has access to variables from its outer (enclosing) function even after the outer function has finished executing.
+
+268: CommonJS Modules
+
+269 A Brief Introduction to the Command Line

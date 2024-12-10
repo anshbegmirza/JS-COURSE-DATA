@@ -111,7 +111,7 @@ getCountryAndNeighbour('usa')
 */
 
 
-// classlic call back hell
+// classic call back hell
 // a triangular shape like this, aslo indicates callbackHell.
 /*
 setTimeout(() => {
@@ -728,3 +728,21 @@ const loadAll = async function (imgArr) {
 }
 
 loadAll(['img/img-1.jpg', 'img/img-2.jpg', 'img/img-3.jpg']);
+
+'use strict';
+
+function downloadContents(urls) {
+  // Create an array of promises that fetch the contents of each URL
+  const fetchPromises = urls.map(url =>
+    fetch(url)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`Failed to fetch ${url}: ${response.statusText}`);
+        }
+        return response.text(); // Get the text content of the response
+      })
+  );
+
+  // Use Promise.all to wait for all the fetch requests to complete in parallel
+  return Promise.all(fetchPromises);
+}
