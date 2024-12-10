@@ -50,7 +50,7 @@ var check = function () {
 };
 check();
 
-console.log(budget);
+cfonsole.log(budget);
 
 var bigExpenses = function (limit) {
   var output = '';

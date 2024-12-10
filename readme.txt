@@ -601,4 +601,39 @@ Thoery lecture how import and export work in JS.
 
 268: CommonJS Modules
 
-269 A Brief Introduction to the Command Line
+269 : A Brief Introduction to the Command Line
+  How we can import different js library using npm on command line and use them in our project.
+
+271 : Bundling With Parcel and NPM Scripts
+
+So what parcel actually does is that it compiles the js into one single file which is production ready just like we do for the css using the sass library.
+
+Parcel is mainly used for the bundling and the building process.
+
+Bundling Assets
+Combines multiple JavaScript, CSS, and other files into a single or optimized set of files for deployment.
+Supports importing assets like images, fonts, and stylesheets directly into JavaScript files.
+
+272 : Configuring Babel and Polyfilling
+
+What is Babel?
+
+Babel is a toolchain that is mainly used to convert ECMAScript 2015+ (mainly code after es6) code into a backwards compatible version of JavaScript in current and older browsers or environments. Here are the main things Babel can do for you:
+
+--Transform syntax
+--Polyfill features that are missing in your target environment (through a third-party    polyfill such as core-js)
+-- Source code transformations (codemods)
+
+
+We used core-js and regenerator-runtime for Polyfilling our js code for better. 
+
+273: Modern, Clean and Declarative JavaScript Programming
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+                                                ***** FOLDER 18 *****  
+                                                      Forkify
+--------------------------------------------------------------------------------------------------------------------
+
+Date 10th Dec, 2024

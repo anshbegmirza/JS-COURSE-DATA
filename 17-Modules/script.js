@@ -1,6 +1,6 @@
 console.log('266: Exporting and Importing in ES6 Modules');
 
-/*
+
 // importing modules
 
 // addToCart('bread', 5)
@@ -27,7 +27,7 @@ add('bread', 5);
 add('apples', 4);
 add('banana', 12);
 console.log(cart);
-*/
+
 
 /*
 console.log(`267: The Module Pattern`);
@@ -73,5 +73,63 @@ console.log(`268: CommonJS Modules`);
 // // imoprt  for node js
 // const { addToCart } = require('./shoppingCart.js');
 
+//////////////////
+// introduction too npm
 
-import cloneDeep from './node_modules/lodash-es/cloneDeep.js';
+// import cloneDeep from './node_modules/lodash-es/cloneDeep.js';
+import cloneDeep from 'lodash-es';
+
+const state = {
+  cart: [
+    {
+      product: 'bread', quantity: 5
+    },
+    {
+      product: 'pizza', quantity: 5
+    },
+  ],
+  user: { loogedIn: true }
+};
+
+const stateClone = Object.assign({}, state);
+const stateDeepClone = cloneDeep(state);
+state.user.loggedIn = false;
+console.log(stateClone);
+
+
+console.log(stateDeepClone);
+
+console.log(`271 : Bundling With Parcel and NPM Scripts`);
+
+// whenever we modify a new module, the page will be updated/
+
+if (module.hot) {
+  module.hot.accept();
+}
+
+class PersonCl {
+  greeting = `Hey`;
+
+  constructor(name) {
+    this.name = name;
+    console.log(`${this.greeting}, ${this.name}`);
+  }
+}
+
+const jonas = new PersonCl('Jonas') // it works.
+
+console.log(cart.find(el => el.quantity >= 2));
+Promise.resolve('TEST').then(x => console.log(x));
+
+import 'core-js/stable';
+
+// importing specific parts which we require.
+// import 'core-js/stable/array/find.js'
+// import 'core-js/stable/promise'
+
+// polyfilling async function
+
+import 'regenerator-runtime/runtime'
+
+
+console.log(`273: Modern, Clean and Declarative JavaScript Programming`);
