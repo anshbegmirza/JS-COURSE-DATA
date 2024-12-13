@@ -1,19 +1,23 @@
 import { async } from 'regenerator-runtime';
+import { API_URL } from './config.js'
+import { getJSON } from './helper.js';
 
+// all the data abt the application
 export const state = {
   recipe: {},
+  search: {
+    query: '',
+    results: [],
+  },
 
 };
 
 export const loadRecipe = async function (id) {
   try {
-    const res = await fetch(`https://forkify-api.herokuapp.com/api/v2/recipes/${id}`);
-    const data = await res.json();
-    // console.log(res, data);
+    const data = await getJSON(`${API_URL}${id} `);
+    console.log(id);
 
-    if (!res.ok) {
-      throw new Error(`${data.message} (${res.status})`)
-    }
+
     const { recipe } = data.data;
     state.recipe = {
       id: recipe.id,
@@ -26,9 +30,38 @@ export const loadRecipe = async function (id) {
       ingredients: recipe.ingredients,
     };
 
-    console.log(state.recipe);
+    // console.log(state.recipe);
   }
   catch (err) {
-    alert(err);
+    console.error(`${err} !!!`);
+    throw err;
   }
 };
+
+
+export const loadSearchResults = async function (query) {
+  try {
+    state.search.query = query;
+
+    const data = await getJSON(`${API_URL}?search=${query}`)
+    // console.log(data);
+
+    state.search.results = data.data.recipes.map(recipe => {
+      return {
+        id: recipe.id,
+        title: recipe.title,
+        publisher: recipe.publisher,
+        image: recipe.image_url,
+      }
+    });
+
+    // console.log(state.search.results);
+
+  }
+  catch (err) {
+    console.error(`${err} !!!`);
+    throw err;
+  }
+};
+
+// loadSearchResults('pizza')

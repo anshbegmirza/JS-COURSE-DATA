@@ -638,6 +638,48 @@ We used core-js and regenerator-runtime for Polyfilling our js code for better.
 
 Date 10th Dec, 2024
 
-275 Section Intro
+275 : Section Intro
 
-277 Project Overview and Planning (I)
+277 : Project Overview and Planning (I)
+Before starting any app you should watch this video atleast for beginning it helps in figuring what kind of interface we need, what are the sections and all that stuff.
+
+
+278 : Loading a Recipe from API3
+
+Parcel also converts the sass into normall css for us !
+
+The simple meaning of async await is that inside a async function we can await the fetching or the getting of data from api by using the await before its name.
+
+We created a simple async await function to fetch data from the forkify api for a piiza.
+
+
+279 : Rendering the Recipe
+
+Inserted adjacent html and created a simple spinner also which will be displayed while the data is being fetched from the api.
+
+280 : Listening For load and hashchange Events 
+
+281: 281 The MVC Architecture
+Learned about tthe model view and controller Architecture. 
+
+282 Refactoring for MVC
+Refactored our exisiting code for forkify a/c to the mvc Architecture.
+
+
+Dec 13th '24
+283 : Helpers and Configuration Files 
+
+We created config file and a helper file for some helper functions and general vairables which are kind of imp about how our app works are stored in the config section
+
+
+284 : Event Handlers in MVC_ Publisher-Subscriber Pattern
+
+we created a handlerRender method in reciepe view class of recipe, called it in controller as init a/c to the Publisher Subscriber pattern.
+
+Although it is not necessary to implement it in our code, but it is always a good practice.
+
+285 : Implementing Error and Sucess Messages
+
+Created simple methods in recipe view class about show error message and show success message also.
+
+286 : Implementing Search Results - Part 1
