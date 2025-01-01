@@ -4,12 +4,15 @@ import icons from 'url:../../img/icons.svg'; // parcel 2
 export default class ViewCl {
   _data;
 
-  render(data) {
+  render(data, render = true) {
 
     if (!data || (Array.isArray(data) && data.length === 0)) return this.renderError();
 
     this._data = data;
     const markup = this._generateMarkup();
+
+    if (!render) return markup;
+
     this._clear();
     this._parentElement.insertAdjacentHTML('afterbegin', markup);
   }
@@ -34,7 +37,7 @@ export default class ViewCl {
   };
 
   update(data) {
-    if (!data || (Array.isArray(data) && data.length === 0)) return this.renderError();
+    // if (!data || (Array.isArray(data) && data.length === 0)) return this.renderError();
 
     this._data = data;
     const newMarkup = this._generateMarkup();
@@ -51,7 +54,7 @@ export default class ViewCl {
     //updates changed text
     newElements.forEach((newEl, i) => {
       const curEl = curElements[i];
-      console.log(curEl, newEl.isEqualNode(curEl));
+      // console.log(curEl, newEl.isEqualNode(curEl));
 
       if (!newEl.isEqualNode(curEl) && newEl.firstChild?.nodeValue.trim() !== '') {
         curEl.textContent = newEl.textContent;
@@ -59,7 +62,7 @@ export default class ViewCl {
 
       //updates changed Attributes
       if (!newEl.isEqualNode(curEl)) {
-        Array.from(newEl.attributes).forEach(attr => curEl.setAttributes(attr.name, attr.value))
+        Array.from(newEl.attributes).forEach(attr => curEl.setAttribute(attr.name, attr.value))
       }
     })
 

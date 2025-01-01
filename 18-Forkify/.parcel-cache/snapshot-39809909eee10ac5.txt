@@ -1,4 +1,4 @@
-8079
+8081
 81/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/src/img/icons.svg1644221921000000000 0
 80/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/src/img/logo.png1644221921000000000 0
 85/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/src/sass/_header.scss1644221921000000000 0
@@ -6,12 +6,12 @@
 92/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/src/sass/_searchResults.scss1644221921000000000 0
 89/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/src/sass/_components.scss1644221921000000000 0
 85/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/src/sass/_recipe.scss1733913987344055270 0
-84/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/src/js/views/view.js1734096478442588113 0
-76/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/src/js/views1735644635920321395 1
+84/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/src/js/views/view.js1735731842457914178 0
+76/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/src/js/views1735731374352722836 1
 70/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/src/js1734085748922416090 1
-87/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/dist/index.f7626f62.css1735649831613471010 0
-91/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/dist/index.f7626f62.css.map1735649831617471146 0
-68/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/dist1735649890783466427 1
+87/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/dist/index.f7626f62.css1735732162480277900 0
+91/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/dist/index.f7626f62.css.map1735732162488278167 0
+68/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/dist1735732162492278300 1
 108/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/posthtml-render/dist/index.d.ts1733913668415037960 0
 106/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/posthtml-render/dist/index.js1733913668155045346 0
 97/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/posthtml-render/dist1733913668355039665 1
@@ -575,7 +575,7 @@
 94/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/core-js/es/string1733918708934291440 1
 104/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/core-js/es/promise/index.js1733918707446225420 0
 113/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/core-js/es/promise/with-resolvers.js1733918709050296587 0
-86/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/dist/index.e37f48ea.js1735649890771466024 0
+86/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/dist/index.e37f48ea.js1735732162480277900 0
 105/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/core-js/es/weak-set/index.js1733918707458225952 0
 96/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/core-js/es/weak-set1733918707458225952 1
 112/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/core-js/es/array-buffer/detached.js1733918706130167033 0
@@ -1162,7 +1162,7 @@
 105/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/core-js/stable/array/from.js1733918707034207139 0
 106/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/core-js/full/string/strike.js1733918708506272450 0
 113/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/core-js/full/string/code-point-at.js1733918705994161000 0
-90/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/dist/index.e37f48ea.js.map1735649890779466292 0
+90/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/dist/index.e37f48ea.js.map1735732162488278167 0
 109/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/core-js/full/string/ends-with.js1733918706158168275 0
 105/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/core-js/full/string/match.js1733918707906245828 0
 106/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/core-js/full/string/repeat.js1733918708182258074 0
@@ -2200,7 +2200,7 @@
 100/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/core-js/actual/iterator1733918708658279194 1
 107/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/core-js/full/array/index-of.js1733918707302219031 0
 137/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/@parcel/core/test/fixtures/main-format-mismatch/package.json1733913670230986374 0
-89/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/dist/favicon.8b2f57bf.png1735649831593470332 0
+89/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/dist/favicon.8b2f57bf.png1735732162480277900 0
 128/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/@parcel/core/test/fixtures/config-extends-not-found1733913669583004781 1
 144/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/@parcel/core/test/fixtures/targets-default-distdir-one/package.json1733913670234986261 0
 128/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/msgpackr-extract/node_modules/detect-libc/README.md1733913668331040347 0
@@ -2271,7 +2271,7 @@
 103/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/@parcel/core/lib/Parcel.js1733913670050991486 0
 119/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/caniuse-lite/data/features/font-loading.js1733913328057034443 0
 125/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/@parcel/core/src/requests/ParcelConfigRequest.js1733913670082990578 0
-90/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/src/js/views/recipeView.js1735649890475456096 0
+90/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/src/js/views/recipeView.js1735729140282685299 0
 112/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/@swc/helpers/_/_non_iterable_spread1733913670278985010 1
 117/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/core-js/full/function/virtual/un-this.js1733918708970293038 0
 119/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/@parcel/core/lib/serializerCore.browser.js1733913670122989442 0
@@ -2661,7 +2661,7 @@
 106/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/core-js/stable/array/index.js1733918707542229679 0
 106/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/@parcel/cache/src/IDBCache.js1733913668459036710 0
 114/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/core-js/actual/symbol/to-primitive.js1733918708766283986 0
-87/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/dist/icons.dfd7a6db.svg1735649831609470874 0
+87/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/dist/icons.dfd7a6db.svg1735732162480277900 0
 109/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/@parcel/transformer-json/LICENSE1733913668087047278 0
 117/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/core-js/features/instance/demethodize.js1733918706122166678 0
 124/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/@parcel/transformer-json/lib/JSONTransformer.js1733913668167045005 0
@@ -2857,7 +2857,7 @@
 113/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/htmlnano/lib/modules/mergeStyles.mjs1733913669978993532 0
 127/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/htmlnano/lib/modules/minifyConditionalComments.mjs1733913669982993419 0
 112/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/htmlnano/lib/modules/minifyUrls.cjs1733913669327012053 0
-87/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/dist/icons.21bad73c.svg1735649831609470874 0
+87/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/dist/icons.21bad73c.svg1735732162480277900 0
 108/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/htmlnano/lib/modules/custom.cjs1733913668423037733 0
 109/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/core-js/full/object/is-frozen.js1733918707638233938 0
 107/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/@parcel/optimizer-htmlnano/src1733913668291041483 1
@@ -4164,7 +4164,7 @@
 106/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/@parcel/utils/src/debounce.js1733913669031020461 0
 111/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/core-js/full/array/virtual/sort.js1733918708394267480 0
 108/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/caniuse-lite/data/regions/CI.js1733913321597239225 0
-86/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/dist/logo.726d37a8.png1735649831613471010 0
+86/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/dist/logo.726d37a8.png1735732162484278033 0
 117/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/core-js/features/array/virtual/splice.js1733918708430269078 0
 113/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/@parcel/source-map/dist/node.js.flow1733913668127046143 0
 119/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/core-js/stable/object/define-properties.js1733918706102165791 0
@@ -4912,7 +4912,7 @@
 103/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/term-size/vendor/.DS_Store1733913313745489733 0
 140/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/@parcel/core/test/fixtures/custom-format-infer-ext/package.json1733913670210986942 0
 114/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/@swc/helpers/src/_super_prop_base.mjs1733913670370982397 0
-84/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/src/js/controller.js1735649629706485297 0
+84/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/src/js/controller.js1735731365088500335 0
 101/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/core-js/es/math/log1p.js1733918707822242101 0
 129/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/posthtml/node_modules/domutils/lib/manipulation.d.ts1733913669343011598 0
 110/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/@swc/core-linux-x64-gnu/README.md1733913668123046255 0
@@ -6057,6 +6057,7 @@
 122/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/caniuse-lite/data/features/media-fragments.js1733913331428928007 0
 108/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/core-js/actual/number/is-nan.js1733918707646234293 0
 110/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/core-js/features/date/get-year.js1733918707106210335 0
+91/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/src/js/views/previewView.js1735731934168809835 0
 111/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/caniuse-lite/data/features/json.js1733913330284964083 0
 112/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/caniuse-lite/data/features/meter.js1733913331444927502 0
 117/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/@parcel/core/lib/requests/PathRequest.js1733913670086990465 0
@@ -6278,7 +6279,7 @@
 123/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/caniuse-lite/data/features/text-size-adjust.js1733913334872819601 0
 110/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/caniuse-lite/data/features/ogv.js1733913332412897003 0
 117/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/caniuse-lite/data/features/filesystem.js1733913327933038364 0
-79/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/dist/index.html1735649831609470874 0
+79/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/dist/index.html1735732162480277900 0
 116/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/core-js/stable/number/to-exponential.js1733918708674279904 0
 113/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/caniuse-lite/data/features/webnfc.js1733913341852600819 0
 108/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/caniuse-lite/data/regions/SH.js1733913334204840603 0
@@ -7432,6 +7433,7 @@
 115/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/core-js/features/array/virtual/join.js1733918707758239262 0
 106/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/core-js/actual/instance/at.js1733918705898156741 0
 110/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/core-js/actual/instance/splice.js1733918708426268900 0
+93/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/src/js/views/bookmarksView.js1735731960029638588 0
 108/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/caniuse-lite/data/regions/IR.js1733913330236965597 0
 119/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/core-js/actual/typed-array/set-from-hex.js1733918708246260914 0
 110/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/core-js/stable/instance/filter.js1733918706742194185 0
@@ -7769,7 +7771,7 @@
 101/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/@parcel/packager-svg/lib1733913668107046710 1
 106/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/@swc/helpers/esm/_ts_param.js1733913670054991373 0
 106/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/core-js/actual/url/to-json.js1733918708730282388 0
-79/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/src/js/model.js1735649429072255940 0
+79/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/src/js/model.js1735730328140523338 0
 99/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/core-js/actual/promise1733918709050296587 1
 117/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/core-js/features/symbol/to-string-tag.js1733918708826286648 0
 114/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/core-js/actual/promise/all-settled.js1733918705782151595 0
@@ -7854,7 +7856,7 @@
 106/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/core-js/stable/url/to-json.js1733918708746283098 0
 115/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/core-js/features/symbol/unscopables.js1733918708978293393 0
 109/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/core-js/features/symbol/index.js1733918707514228436 0
-91/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/src/js/views/resultsView.js1734096301458113703 0
+91/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/src/js/views/resultsView.js1735732161724252675 0
 111/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/core-js/features/symbol/key-for.js1733918707770239794 0
 116/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/core-js/features/symbol/has-instance.js1733918707162212818 0
 114/home/softrefine/Downloads/ANSH MIRZA/JS COURSE DATA/18-Forkify/node_modules/core-js/stable/get-iterator-method.js1733918707050207849 0

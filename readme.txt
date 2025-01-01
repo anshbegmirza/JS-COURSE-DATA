@@ -683,3 +683,28 @@ Although it is not necessary to implement it in our code, but it is always a goo
 Created simple methods in recipe view class about show error message and show success message also.
 
 286 : Implementing Search Results - Part 1
+
+31st Dec, 2024
+287: Implementing Search results part 2
+Created seperate view general class and used it to implement all the smaller general functionalities in it.
+
+288 : Implementing Pagination - Part 1
+
+289 Implementing Pagination - Part 2
+
+290 Project Planning II
+
+291 Updating Recipe Servings
+
+292 : Developing a DOM Updating Algorithm 
+-- Created a update method for the view section used it to update the recipe changes in the servings and in the search results.
+
+293 : Implementing Bookmarks - Part 1
+-- Created a add book mark and delete book mark function and implemeneted it in our contoller and recipeview.
+
+294 : Implementing Bookmarks - Part 2
+-- created a preview view named js module used it to refactor the generate markup code for the  results and bookmarks.
+
+295 : Storing Bookmarks With localStorage
+
+297 from 9 mins
