@@ -707,4 +707,31 @@ Created seperate view general class and used it to implement all the smaller gen
 
 295 : Storing Bookmarks With localStorage
 
-297 from 9 mins
+296 Project Planning III
+Completeing the step 8 and 9 which are uploading a new recipe and showing it in the user.
+
+297 Uploading a New Recipe - Part 1
+
+Used a FormData api to receive data from the form on submit event then created a array out of it and then converted that array to object.
+
+298 : Uploading a New Recipe - Part 2
+
+{will learn how to send data to an api (how to upload)};
+first we extracted data from the form submit event then used it upload it in the api, also added sccess and failure messages, also added a spinner on loading.
+
+299 Uploading a New Recipe - Part 3
+Generated my own api key for the forkify api and used it to fetch data and send in the api.
+
+
+300 : Wrapping Up_ Final Considerations
+added some documentation comments to some functions to see how the work and behave.
+
+use app.jsdoc  for more info on documentation in JS.
+
+  
+
+--------------------------------------------------------------------------------------------------------------------
+                                                ***** Completed JS course *****  
+                                                    Date: Jan 2, 2025 3:12PM.
+--------------------------------------------------------------------------------------------------------------------
+

@@ -1,20 +1,26 @@
 import 'core-js/stable'; // pollyfill for the rest.
 import 'regenerator-runtime/runtime'; // pollyfill async await
+
 import * as model from './model.js';
+
+import { MODEL_CLOSE_SEC } from './config.js'
+
+
 import View from './views/view.js'
+
 import searchView from './views/searchView.js';
 import resultsView from './views/resultsView.js';
 import paginationView from './views/paginationView.js';
 import recipeView from './views/recipeView.js';
 import bookmarksView from './views/bookmarksView.js';
-
 import addRecipeView from './views/addRecipeView.js';
+
 
 // console.log(icons);
 
-// if (module.hot) {
-//   module.hot.accept();
-// }
+if (module.hot) {
+  module.hot.accept();
+}
 
 
 const { mark } = require("regenerator-runtime");
@@ -157,7 +163,48 @@ const controlAddBookmark = function () {
 
 const controlBookmarks = function () {
   bookmarksView.render(model.state.bookmarks);
-}
+};
+
+const controlAddRecipe = async function (newRecipe) {
+  // console.log(newRecipe);
+  try {
+
+    // show loading spinner
+    addRecipeView.renderSpinner();
+
+    // some function to upload recipe data.
+    await model.uploadRecipe(newRecipe);
+    console.log(model.state.recipe);
+    // render recupe
+    recipeView.render(model.state.recipe);
+
+    //sucess message
+    addRecipeView.renderMessage()
+
+    // render bookmark view
+    bookmarksView.render(model.state.bookmarks);
+
+    // change id in url.
+    // reloads url 
+    window.history.pushState(null, '', `#${model.state.recipe.id}`);
+
+    // goes back to last page
+    // window.history.back(); 
+
+    //close form window
+    setTimeout(function () {
+      addRecipeView.toggleWindow()
+    }, MODEL_CLOSE_SEC * 1000);
+  }
+  catch (err) {
+    console.error('X', err);
+    addRecipeView.renderError(err.message);
+  }
+
+};
+
+
+
 
 
 const init = function () {
@@ -167,6 +214,6 @@ const init = function () {
   recipeView.addHandlerAddBookmark(controlAddBookmark);
   searchView.addHandlerSearch(controlSearchResults);
   paginationView.addHandlerClick(controlPagination);
-
+  addRecipeView.addHandlerUpload(controlAddRecipe);
 };
 init();
