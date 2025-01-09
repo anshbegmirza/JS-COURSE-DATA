@@ -1,0 +1,65 @@
+:root {
+  --background-color: #FAAC24;
+
+  --container-color: #121418;
+  --white: #fff;
+  --hover: #ffffffa1;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: var(--background-color);
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  background-color: var(--container-color);
+  height: 65vh;
+  width: 70vw;
+  display: grid;
+  border-radius: 1.5rem;
+  border: .3rem solid var(--white);
+  place-items: center;
+  color: var(--white);
+}
+
+.container-joke-text {
+  font-size: 3rem;
+}
+
+.container-emoji {
+  text-align: center;
+  font-size: 10rem;
+  /* outline: 1px solid lime; */
+}
+
+.container-btn {
+  display: inline-block;
+  border: none;
+  height: 4rem;
+  width: 20rem;
+  cursor: pointer;
+  border-radius: 1.1rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 0.2rem 1rem;
+  background-color: var(--white);
+  transition: all .3s;
+}
+
+.container-btn:hover {
+  background-color: var(--hover);
+}

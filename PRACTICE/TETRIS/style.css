@@ -1,0 +1,32 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: lightblue;
+  flex-direction: column;
+  height: 90vh;
+  font-family: 'Press Start 2P';
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.score {
+  margin-top: 1rem;
+}
+
+#canvas {
+  margin: 1rem;
+  border: 1px solid lime;
+  background-color: #fff;
+  box-shadow: 0 0 1.8rem rgb(0, 0, 0, 0.6);
+}
