@@ -7,7 +7,7 @@
   <title>TETRIS GAME || JS</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
-  <link rel="shortcut icon" href="tetris-logo.png" type="image/x-icon">
+  <link rel="shortcut icon" href="IMGS/tetris-bg.webp " type="image/x-icon">
   <!-- Font styles -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,8 +17,18 @@
 </head>
 
 <body>
+  <div class="overlay-bg"></div>
+  <img src="IMGS/tetris-bg.webp" alt="background" class="background"></img>
   <h2 class="score">Score:0</h2>
   <canvas id="canvas" height="600" width="300"></canvas>
+
+  <!-- instruction box -->
+  <div class="controls-container">
+    <button class="btn" id="rotate-btn">rotate</button>
+    <button class="btn" id="down-btn">down</button>
+    <button class="btn" id="left-btn">left</button>
+    <button class="btn" id="right-btn">right</button>
+  </div>
 </body>
 
 </html>
