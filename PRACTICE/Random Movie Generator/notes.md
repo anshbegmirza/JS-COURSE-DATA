@@ -1,0 +1,5 @@
+# GOAL TO BUILD A RANDOM MOVIE GENERATOR ON CLICK
+
+#API KEY :2905a754
+
+API URL = https://www.omdbapi.com/?i=tt3895198&apikey=2905a754&

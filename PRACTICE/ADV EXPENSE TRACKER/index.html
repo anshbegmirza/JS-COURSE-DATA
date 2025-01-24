@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>JS-4 Expense Tracker App (anshbegmirza)</title>
+
+    <!-- Font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- JS -->
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div class="grid-overlay"></div>
+    <div class="container">
+
+        <!-- Title -->
+        <h1 class="title center-text">Expense Tracker</h1>
+        <p class="tagline center-text">"Track Your Spending, Take Control of Your Finances"</p>
+        <hr class="seperator">
+
+        <!-- Expense Form -->
+        <form action="" id="expense-form" class="expense-form">
+            <input id="expense-name" class="expense-input" type="text" placeholder="Expense Name" maxlength="20"
+                required>
+            <input id="expense-amount" class="expense-input" type="number" placeholder="Expense Amount" maxlength="10"
+                required>
+            <input id="expense-date" class="expense-input" type="date" placeholder="MM/DD/YYYY"
+                onfocus="(this.type='date')" required>
+
+            <select class="expense-input expense-select" name="" id="expense-category">
+                <!-- Dynamically cate would be added from js -->
+            </select>
+            <button id="expense-btn" class="expense-input add-btn btn"> <ion-icon name="cart-outline"></ion-icon>
+                <p>Add</p>
+            </button>
+        </form>
+
+        <label class="filter-text" for="filter-category">Filter by Category :</label>
+        <select name="" class="filter-by margin-btm" id="filter-category">
+            <!-- Dynamically cate would be added from js -->
+        </select>
+
+        <!-- Expense Table -->
+        <div class="expense-table-wrapper">
+            <table class="expense-table">
+                <thead>
+                    <tr class="expense-fields">
+                        <th class="expense-details">Name</th>
+                        <th class="expense-details">Amount</th>
+                        <th class="expense-details">Date</th>
+                        <th class="expense-details">Category</th>
+                        <th class="expense-details">Action</th>
+                    </tr>
+                </thead>
+                <tbody class="expense-fields" id="expense-TableBody">
+                    <!-- Dynamically data would be added from js -->
+                </tbody>
+
+            </table>
+        </div>
+
+        <!-- Modal for delete conformation -->
+
+
+        <!-- Display Total Expense -->
+        <p class="display-expense">Total Expense: <span id="total-expense" class="total-expense">$0.00</span></p>
+    </div>
+    <div class="overlay hidden"></div>
+    <div class="delete-model hidden">
+        <p class="delete-request">Do you really want to delete expense?</p>
+        <img src="imgs/trash_Can.png" class="delete-img" alt="">
+        <button class="close-popup-btn"><ion-icon name="close-circle-outline"></ion-icon></button>
+        <div class="buttons-box"><button class="yes-delete">Yes, Delete</button>
+            <button class="cancel-btn">Cancel this time</button>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
